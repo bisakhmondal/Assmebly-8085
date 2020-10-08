@@ -1,0 +1,16 @@
+LDA 2060H;
+MOV D,A; LOAD content to D reg
+MVI B, 00H;
+MVI C, 01H;
+LOOP: MOV A, C;
+ADD B;
+MOV H,A;
+MOV A, C;
+MOV B,C;
+MOV A,H;
+MOV C,A;
+DCR D;
+JNZ LOOP;
+MOV A,B;
+STA 2061H;
+HLT

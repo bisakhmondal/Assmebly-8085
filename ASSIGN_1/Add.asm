@@ -12,6 +12,6 @@ NOCARRY: STA 2202H; Store Sum into 2202H
 
 MOV A, C; Move carry into accumulator
 
-STA 2203; Store Carry
+STA 2203H; Store Carry
 
 HLT;

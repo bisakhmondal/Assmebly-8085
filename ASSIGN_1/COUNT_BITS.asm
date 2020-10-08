@@ -17,7 +17,7 @@ JNZ LOOP;
 
 MVI A, 008H; For number of unset bits.
 SUB D; Substract the number of set bits from a byte(8 bit)
-STA 2610H; Store the unset bits count in 2610H
+STA 2510H; Store the unset bits count in 2610H
 MOV A, D; Mov D accumulator content to Accumulator.
 STA 2511H; Store set bits into 2511H
 

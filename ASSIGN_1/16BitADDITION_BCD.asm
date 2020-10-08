@@ -21,4 +21,4 @@ INR D; Increase the carry count
 NOCARRY: STA 2505H; Store the next 8 bit sum to 2505H
 MOV A,D;  Move D(carry) to accumulator
 STA 2506H; Store the result in 2500H 
-RST 5;
+HLT;
